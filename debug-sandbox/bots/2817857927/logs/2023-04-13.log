@@ -1,0 +1,51 @@
+[0m2023-04-13 14:14:34 V/Net 2817857927: Invalidate caches because hash file not available.[0m
+[0m2023-04-13 14:14:34 V/Net 2817857927: No server list cached.[0m
+[92m2023-04-13 14:14:34 I/Net 2817857927: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-04-13 14:14:34 I/Net 2817857927: Successfully fetched ecdh public key from server.[0m
+[0m2023-04-13 14:14:34 V/Net 2817857927: Send: wtlogin.login(9:password-login)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: wtlogin.login[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: StatSvc.register(online)[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Server time updated, serverTime: 1681366475, diff: 0ms=0.0s[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: StatSvc.register[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: No BdhSession cache[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Syncing friend message history...[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Start loading friend list...[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Start loading stranger list...[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Start loading friendGroup list...[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: OidbSvc.0x5d2_0[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Successfully loaded stranger list: 0 in total[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Online OtherClients: Redmi K30i 5G(MOBILE)[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Start loading group list...[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: OidbSvc.0x496[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: friendlist.getFriendGroupList[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Loading friend list: 5/5[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Successfully loaded friend list: 5 in total[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: friendlist.getFriendGroupList[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Loading friendGroup list: 4/4[0m
+[92m2023-04-13 14:14:35 I/Net 2817857927: Successfully loaded friendGroup list: 4 in total[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: friendlist.GetTroopListReqV2[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-04-13 14:14:35 V/Net 2817857927: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2023-04-13 14:14:36 I/Net 2817857927: Successfully loaded group list: 1 in total.[0m
+[0m2023-04-13 14:14:36 V/Net 2817857927: Send: ProfileService.Pb.ReqSystemMsgNew.Group(ProfileService.Pb.ReqSystemMsgNew.Group)[0m
+[92m2023-04-13 14:14:36 I/Net 2817857927: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2023-04-13 14:14:36 I/Net 2817857927: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[0m2023-04-13 14:14:36 V/Net 2817857927: Send: ProfileService.Pb.ReqSystemMsgNew.Group(ProfileService.Pb.ReqSystemMsgNew.Group)[0m
+[92m2023-04-13 14:14:36 I/Net 2817857927: Syncing friend message history: Success.[0m
+[0m2023-04-13 14:14:36 V/Net 2817857927: Recv: ProfileService.Pb.ReqSystemMsgNew.Group[0m
+[0m2023-04-13 14:14:36 V/Net 2817857927: Recv: ProfileService.Pb.ReqSystemMsgNew.Group[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Server list: 116.130.229.12:80, 125.39.196.172:80, msfwifi.3g.qq.com:8080, 163.177.30.32:443, 153.3.50.17:14000, 157.148.54.141:8080, 125.39.196.243:80, 59.83.208.163:14000, 112.80.130.123:80, 116.130.229.43:443.[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: No BdhSession to save to cache[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Saving server list to cache[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Recv: ConfigPushSvc.PushReq[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Saving bdh session to cache[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-04-13 14:14:38 V/Net 2817857927: Recv: ConfigPushSvc.PushReq[0m

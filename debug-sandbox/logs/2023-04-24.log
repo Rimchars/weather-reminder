@@ -1,0 +1,2585 @@
+2023-04-24 13:41:34 I/main: Starting mirai-console...
+2023-04-24 13:41:34 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 13:41:34 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 13:41:34 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 13:41:34 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 13:41:47 E/main: Failed to init MiraiConsole.
+net.mamoe.mirai.console.internal.util.ServiceLoadException: Could not load service com.example.WeatherReminder.
+	at net.mamoe.mirai.console.internal.util.PluginServiceHelper.loadService(PluginServiceHelper.kt:60)
+	at net.mamoe.mirai.console.internal.util.PluginServiceHelper.loadAllServices(PluginServiceHelper.kt:42)
+	at net.mamoe.mirai.console.internal.plugin.BuiltInJvmPluginLoaderImpl$extractPlugins$findAllInstances$2.invoke(BuiltInJvmPluginLoaderImpl.kt:197)
+	at net.mamoe.mirai.console.internal.plugin.BuiltInJvmPluginLoaderImpl$extractPlugins$findAllInstances$2.invoke(BuiltInJvmPluginLoaderImpl.kt:192)
+	at kotlin.sequences.TransformingSequence$iterator$1.next(Sequences.kt:210)
+	at kotlin.sequences.FlatteningSequence$iterator$1.ensureItemIterator(Sequences.kt:314)
+	at kotlin.sequences.FlatteningSequence$iterator$1.hasNext(Sequences.kt:303)
+	at kotlin.sequences.TransformingSequence$iterator$1.hasNext(Sequences.kt:214)
+	at kotlin.sequences.TransformingSequence$iterator$1.hasNext(Sequences.kt:214)
+	at kotlin.sequences.FlatteningSequence$iterator$1.ensureItemIterator(Sequences.kt:307)
+	at kotlin.sequences.FlatteningSequence$iterator$1.hasNext(Sequences.kt:303)
+	at kotlin.sequences.SequencesKt___SequencesKt.toCollection(_Sequences.kt:787)
+	at kotlin.sequences.SequencesKt___SequencesKt.toSet(_Sequences.kt:828)
+	at net.mamoe.mirai.console.internal.plugin.BuiltInJvmPluginLoaderImpl.extractPlugins(BuiltInJvmPluginLoaderImpl.kt:218)
+	at net.mamoe.mirai.console.internal.plugin.BuiltInJvmPluginLoaderImpl.listPlugins(BuiltInJvmPluginLoaderImpl.kt:67)
+	at net.mamoe.mirai.console.plugin.jvm.JvmPluginLoader$BuiltIn.listPlugins(JvmPluginLoader.kt)
+	at net.mamoe.mirai.console.internal.plugin.PluginManagerImpl.listAndSortAllPlugins(PluginManagerImpl.kt:195)
+	at net.mamoe.mirai.console.internal.plugin.PluginManagerImpl.findAndSortAllPluginsUsingBuiltInLoaders(PluginManagerImpl.kt:141)
+	at net.mamoe.mirai.console.internal.plugin.PluginManagerImpl.loadAllPluginsUsingBuiltInLoaders$mirai_console(PluginManagerImpl.kt:151)
+	at net.mamoe.mirai.console.internal.MiraiConsoleImplementationBridge.doStart$mirai_console(MiraiConsoleImplementationBridge.kt:290)
+	at net.mamoe.mirai.console.MiraiConsoleImplementation$Companion.start(MiraiConsoleImplementation.kt:496)
+	at net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader.startAsDaemon(MiraiConsoleTerminalLoader.kt:177)
+	at net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader.startAsDaemon$default(MiraiConsoleTerminalLoader.kt:176)
+	at net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader.main(MiraiConsoleTerminalLoader.kt:54)
+Caused by: java.lang.ClassNotFoundException: com.example.WeatherReminder
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at net.mamoe.mirai.console.internal.plugin.JvmPluginClassLoaderN.loadClass(JvmPluginClassLoader.kt:440)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at net.mamoe.mirai.console.internal.util.PluginServiceHelper.loadService(PluginServiceHelper.kt:51)
+	... 23 more
+
+2023-04-24 13:47:37 I/main: Starting mirai-console...
+2023-04-24 13:47:37 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 13:47:37 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 13:47:37 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 13:47:37 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 13:47:40 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 13:47:40 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 13:47:40 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 13:47:40 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 13:47:40 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 13:47:40 I/WeatherReminder: Plugin loaded
+2023-04-24 13:47:40 I/main: 2 plugin(s) enabled.
+2023-04-24 13:47:40 I/main: mirai-console started successfully.
+2023-04-24 13:47:48 I/Bot.2817857927: Bot cancelled: Bot closed
+2023-04-24 13:47:48 E/console: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2817857927), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2817857927), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:331)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2023-04-24 13:50:51 W/console: Closing input service...
+2023-04-24 13:50:52 I/main: Starting mirai-console...
+2023-04-24 13:50:52 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 13:50:52 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 13:50:52 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 13:50:52 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 13:50:53 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 13:50:53 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 13:50:53 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 13:50:53 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 13:50:53 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 13:50:53 I/WeatherReminder: Plugin loaded
+2023-04-24 13:50:53 I/main: 2 plugin(s) enabled.
+2023-04-24 13:50:53 I/main: mirai-console started successfully.
+2023-04-24 13:51:02 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 13:51:02 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 13:51:02 I/Bot.2817857927: Login successful.
+2023-04-24 13:51:03 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 13:51:03 I/Bot.2817857927: Bot login successful.
+2023-04-24 13:51:35 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京
+2023-04-24 13:51:36 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 13:51:43 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京市
+2023-04-24 13:51:43 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 13:52:18 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 13:52:18 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 13:53:01 W/console: Closing input service...
+2023-04-24 14:33:47 I/main: Starting mirai-console...
+2023-04-24 14:33:48 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 14:33:48 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 14:33:48 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 14:33:48 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 14:33:48 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 14:33:48 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 14:33:48 I/JvmPluginLoader: 移动 WeatherReminder v0.1.0 的数据文件目录(D:\编程\weather-reminder\debug-sandbox\config\WeatherReminder)到 D:\编程\weather-reminder\debug-sandbox\config\com.example.weather-reminder
+2023-04-24 14:33:48 I/JvmPluginLoader: 移动 WeatherReminder v0.1.0 的数据文件目录(D:\编程\weather-reminder\debug-sandbox\config\WeatherReminder)到 D:\编程\weather-reminder\debug-sandbox\config\com.example.weather-reminder 完成
+2023-04-24 14:33:48 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 14:33:48 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 14:33:48 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 14:33:48 I/WeatherReminder: Plugin loaded
+2023-04-24 14:33:48 I/main: 2 plugin(s) enabled.
+2023-04-24 14:33:48 I/main: mirai-console started successfully.
+2023-04-24 14:34:05 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 14:34:05 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 14:34:05 I/Bot.2817857927: Login successful.
+2023-04-24 14:34:06 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 14:34:06 I/Bot.2817857927: Bot login successful.
+2023-04-24 14:34:15 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 14:34:16 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 14:34:30 W/console: Closing input service...
+2023-04-24 14:34:35 I/main: Starting mirai-console...
+2023-04-24 14:34:35 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 14:34:35 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 14:34:35 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 14:34:35 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 14:34:35 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 14:34:35 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 14:34:35 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 14:34:35 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 14:34:35 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 14:34:35 I/WeatherReminder: Plugin loaded
+2023-04-24 14:34:35 I/main: 2 plugin(s) enabled.
+2023-04-24 14:34:35 I/main: mirai-console started successfully.
+2023-04-24 14:56:23 W/console: Closing input service...
+2023-04-24 14:56:26 I/main: Starting mirai-console...
+2023-04-24 14:56:26 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 14:56:26 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 14:56:26 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 14:56:26 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 14:56:27 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 14:56:27 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 14:56:27 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 14:56:27 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 14:56:27 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 14:56:27 I/WeatherReminder: Plugin loaded
+2023-04-24 14:56:27 I/main: 2 plugin(s) enabled.
+2023-04-24 14:56:27 I/main: mirai-console started successfully.
+2023-04-24 14:56:30 W/console: Closing input service...
+2023-04-24 14:56:36 I/main: Starting mirai-console...
+2023-04-24 14:56:36 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 14:56:36 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 14:56:36 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 14:56:36 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 14:56:37 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 14:56:37 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 14:56:37 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 14:56:37 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 14:56:37 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 14:56:37 I/WeatherReminder: Plugin loaded
+2023-04-24 14:56:37 I/main: 2 plugin(s) enabled.
+2023-04-24 14:56:37 I/main: mirai-console started successfully.
+2023-04-24 14:56:42 W/console: Closing input service...
+2023-04-24 14:56:47 I/main: Starting mirai-console...
+2023-04-24 14:56:47 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 14:56:47 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 14:56:47 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 14:56:47 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 14:56:47 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 14:56:47 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 14:56:47 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 14:56:48 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 14:56:48 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 14:56:48 I/WeatherReminder: Plugin loaded
+2023-04-24 14:56:48 I/main: 2 plugin(s) enabled.
+2023-04-24 14:56:48 I/main: mirai-console started successfully.
+2023-04-24 15:00:49 W/console: Closing input service...
+2023-04-24 15:07:57 I/main: Starting mirai-console...
+2023-04-24 15:07:57 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:07:57 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:07:57 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:07:57 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:07:57 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:07:57 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:07:57 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:07:58 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:07:58 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:07:58 I/WeatherReminder: Plugin loaded
+2023-04-24 15:07:58 I/main: 2 plugin(s) enabled.
+2023-04-24 15:07:58 I/main: mirai-console started successfully.
+2023-04-24 15:07:59 W/console: Closing input service...
+2023-04-24 15:08:12 I/main: Starting mirai-console...
+2023-04-24 15:08:12 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:08:12 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:08:12 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:08:12 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:08:13 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:08:13 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:08:13 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:08:13 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:08:13 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:08:13 I/WeatherReminder: Plugin loaded
+2023-04-24 15:08:13 I/main: 2 plugin(s) enabled.
+2023-04-24 15:08:13 I/main: mirai-console started successfully.
+2023-04-24 15:08:16 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:08:16 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:08:16 I/Bot.2817857927: Login successful.
+2023-04-24 15:08:17 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:08:17 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:09:07 W/console: Closing input service...
+2023-04-24 15:09:31 I/main: Starting mirai-console...
+2023-04-24 15:09:31 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:09:31 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:09:31 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:09:31 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:09:31 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:09:31 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:09:31 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:09:32 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:09:32 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:09:32 I/WeatherReminder: Plugin loaded
+2023-04-24 15:09:32 I/main: 2 plugin(s) enabled.
+2023-04-24 15:09:32 I/main: mirai-console started successfully.
+2023-04-24 15:09:36 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:09:36 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:09:36 I/Bot.2817857927: Login successful.
+2023-04-24 15:09:36 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:09:36 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:09:37 V/Bot.2817857927: Friend(1064979746) <- 请设置key
+2023-04-24 15:09:52 W/console: Closing input service...
+2023-04-24 15:13:19 I/main: Starting mirai-console...
+2023-04-24 15:13:19 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:13:19 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:13:19 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:13:19 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:13:20 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:13:20 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:13:20 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:13:20 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:13:20 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:13:20 I/WeatherReminder: Plugin loaded
+2023-04-24 15:13:20 I/main: 2 plugin(s) enabled.
+2023-04-24 15:13:20 I/main: mirai-console started successfully.
+2023-04-24 15:13:24 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:13:24 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:13:24 I/Bot.2817857927: Login successful.
+2023-04-24 15:13:25 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:13:25 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:13:25 V/Bot.2817857927: Friend(1064979746) <- 请设置key
+2023-04-24 15:13:32 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 15:13:32 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 15:13:38 W/console: Closing input service...
+2023-04-24 15:22:38 I/main: Starting mirai-console...
+2023-04-24 15:22:38 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:22:38 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:22:38 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:22:38 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:22:39 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:22:39 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:22:39 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:22:39 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:22:39 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:22:39 I/WeatherReminder: Plugin loaded
+2023-04-24 15:22:39 I/main: 2 plugin(s) enabled.
+2023-04-24 15:22:39 I/main: mirai-console started successfully.
+2023-04-24 15:22:41 W/console: Closing input service...
+2023-04-24 15:23:04 I/main: Starting mirai-console...
+2023-04-24 15:23:04 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:23:04 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:23:04 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:23:04 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:23:04 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:23:04 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:23:04 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:23:04 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:23:04 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:23:04 I/WeatherReminder: Plugin loaded
+2023-04-24 15:23:04 I/main: 2 plugin(s) enabled.
+2023-04-24 15:23:04 I/main: mirai-console started successfully.
+2023-04-24 15:23:12 W/console: Closing input service...
+2023-04-24 15:23:15 I/main: Starting mirai-console...
+2023-04-24 15:23:15 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:23:15 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:23:15 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:23:15 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:23:16 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:23:16 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:23:16 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:23:16 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:23:16 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:23:16 I/WeatherReminder: Plugin loaded
+2023-04-24 15:23:16 I/main: 2 plugin(s) enabled.
+2023-04-24 15:23:16 I/main: mirai-console started successfully.
+2023-04-24 15:23:20 W/console: Closing input service...
+2023-04-24 15:26:55 I/main: Starting mirai-console...
+2023-04-24 15:26:55 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:26:55 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:26:55 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:26:55 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:26:56 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:26:56 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:26:56 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:34:36 I/main: Starting mirai-console...
+2023-04-24 15:34:36 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:34:36 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:34:36 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:34:36 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:34:37 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:34:37 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:34:37 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:34:37 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:34:37 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:34:37 I/WeatherReminder: Plugin loaded
+2023-04-24 15:34:37 I/main: 2 plugin(s) enabled.
+2023-04-24 15:34:37 I/main: mirai-console started successfully.
+2023-04-24 15:34:46 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:34:46 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:34:46 I/Bot.2817857927: Login successful.
+2023-04-24 15:34:47 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:34:47 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:34:55 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 15:34:55 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 15:35:08 V/Bot.2817857927: 不知道(1064979746) -> 时间 15:35 430000
+2023-04-24 15:35:08 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 15:35:11 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：11 \n风向：西北 \n风力：≤3 \n湿度：88 \n更新时间：2023-04-24 15:34:53
+2023-04-24 15:35:49 W/console: Closing input service...
+2023-04-24 15:35:51 I/main: Starting mirai-console...
+2023-04-24 15:35:51 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:35:51 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:35:51 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:35:51 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:41:11 I/main: Starting mirai-console...
+2023-04-24 15:41:11 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:41:11 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:41:11 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:41:11 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:41:11 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:41:11 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:41:11 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:41:12 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:41:12 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:41:12 I/WeatherReminder: Plugin loaded
+2023-04-24 15:41:12 I/main: 2 plugin(s) enabled.
+2023-04-24 15:41:12 I/main: mirai-console started successfully.
+2023-04-24 15:41:13 W/console: Closing input service...
+2023-04-24 15:43:04 I/main: Starting mirai-console...
+2023-04-24 15:43:04 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:43:04 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:43:04 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:43:04 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:43:04 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:43:04 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:43:04 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:43:04 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:43:04 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:43:04 I/WeatherReminder: Plugin loaded
+2023-04-24 15:43:04 I/main: 2 plugin(s) enabled.
+2023-04-24 15:43:04 I/main: mirai-console started successfully.
+2023-04-24 15:43:07 W/console: 未知指令: /import kotlinx.coroutines.delay, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import net.mamoe.mirai.Bot, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import org.json.JSONObject, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import java.io.BufferedInputStream, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import java.net.HttpURLConnection, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import java.net.URL, 输入 ? 获取帮助
+2023-04-24 15:43:07 W/console: 未知指令: /import java.net.URLEncoder, 输入 ? 获取帮助
+2023-04-24 15:43:12 W/console: 未知指令: /import java.time.LocalDateTimelogin 2817857927 719xyzforever MACOS, 输入 ? 获取帮助
+2023-04-24 15:43:15 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:43:16 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:43:16 I/Bot.2817857927: Login successful.
+2023-04-24 15:43:16 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:43:16 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:43:26 V/Bot.2817857927: 不知道(1064979746) -> 时间 15:43 430000
+2023-04-24 15:43:27 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 15:43:31 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 15:43:38 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 15:43:38 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 15:43:41 V/Bot.2817857927: 不知道(1064979746) -> 时间 15:43 430000
+2023-04-24 15:43:41 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 15:44:12 W/console: Closing input service...
+2023-04-24 15:45:04 I/main: Starting mirai-console...
+2023-04-24 15:45:04 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:45:04 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:45:04 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:45:04 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:45:05 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:45:05 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:45:05 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:45:05 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:45:05 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:45:05 I/WeatherReminder: Plugin loaded
+2023-04-24 15:45:05 I/main: 2 plugin(s) enabled.
+2023-04-24 15:45:05 I/main: mirai-console started successfully.
+2023-04-24 15:45:12 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 15:45:12 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 15:45:12 I/Bot.2817857927: Login successful.
+2023-04-24 15:45:12 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 15:45:12 I/Bot.2817857927: Bot login successful.
+2023-04-24 15:45:15 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 15:45:33 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京市
+2023-04-24 15:45:34 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 15:45:45 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 15:45:45 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 15:45:50 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京市
+2023-04-24 15:45:50 V/Bot.2817857927: Friend(1064979746) <- 城市：北京市 \n天气：多云 \n温度：14 \n风向：西南 \n风力：4 \n湿度：49 \n更新时间：2023-04-24 15:39:04
+2023-04-24 15:46:01 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：11 \n风向：西北 \n风力：≤3 \n湿度：88 \n更新时间：2023-04-24 15:34:53
+2023-04-24 15:46:17 W/console: Closing input service...
+2023-04-24 15:47:05 I/main: Starting mirai-console...
+2023-04-24 15:47:05 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:47:05 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:47:05 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:47:05 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:47:28 I/main: Starting mirai-console...
+2023-04-24 15:47:28 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:47:28 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:47:28 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:47:28 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:47:28 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:47:28 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:47:28 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:47:28 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:47:28 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:47:28 I/WeatherReminder: Plugin loaded
+2023-04-24 15:47:28 I/main: 2 plugin(s) enabled.
+2023-04-24 15:47:28 I/main: mirai-console started successfully.
+2023-04-24 15:47:29 W/console: Closing input service...
+2023-04-24 15:52:03 I/main: Starting mirai-console...
+2023-04-24 15:52:03 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:52:03 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:52:03 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:52:03 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:52:04 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:52:04 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:52:04 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:52:04 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:52:04 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:52:04 I/WeatherReminder: Plugin loaded
+2023-04-24 15:52:04 I/main: 2 plugin(s) enabled.
+2023-04-24 15:52:04 I/main: mirai-console started successfully.
+2023-04-24 15:52:06 W/console: Closing input service...
+2023-04-24 15:52:08 I/main: Starting mirai-console...
+2023-04-24 15:52:08 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:52:08 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:52:08 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:52:08 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:52:08 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:52:08 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:52:08 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:52:08 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:52:08 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:52:08 I/WeatherReminder: Plugin loaded
+2023-04-24 15:52:08 I/main: 2 plugin(s) enabled.
+2023-04-24 15:52:08 I/main: mirai-console started successfully.
+2023-04-24 15:57:08 W/console: Closing input service...
+2023-04-24 15:57:10 I/main: Starting mirai-console...
+2023-04-24 15:57:10 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 15:57:10 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 15:57:10 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 15:57:10 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 15:57:11 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 15:57:11 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 15:57:11 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 15:57:11 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 15:57:11 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 15:57:11 I/WeatherReminder: Plugin loaded
+2023-04-24 15:57:11 I/main: 2 plugin(s) enabled.
+2023-04-24 15:57:11 I/main: mirai-console started successfully.
+2023-04-24 15:57:14 W/console: 未知指令: /Bot.getInstance(2817857927), 输入 ? 获取帮助
+2023-04-24 16:00:45 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:00:46 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:00:46 I/Bot.2817857927: Login successful.
+2023-04-24 16:00:46 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:00:46 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:00:46 V/Bot.2817857927: Friend(1064979746) <- 2817857927
+2023-04-24 16:00:47 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:00:47 V/Bot.2817857927: Friend(1064979746) <- [[0, 0, 0, 0], [15, 35, 430000, 1064979746], [15, 43, 430000, 1064979746], [15, 43, 430000, 1064979746]]
+2023-04-24 16:00:53 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京市
+2023-04-24 16:00:54 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:01:05 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:01:05 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:01:07 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京市
+2023-04-24 16:01:07 V/Bot.2817857927: Friend(1064979746) <- 城市：北京市 \n天气：多云 \n温度：14 \n风向：西南 \n风力：4 \n湿度：49 \n更新时间：2023-04-24 15:39:04
+2023-04-24 16:01:24 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:1 430000
+2023-04-24 16:01:25 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:01:32 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：11 \n风向：西北 \n风力：≤3 \n湿度：88 \n更新时间：2023-04-24 15:34:53
+2023-04-24 16:01:51 W/console: Closing input service...
+2023-04-24 16:03:23 I/main: Starting mirai-console...
+2023-04-24 16:03:23 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:03:23 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:03:23 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:03:23 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:03:27 I/main: Starting mirai-console...
+2023-04-24 16:03:27 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:03:27 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:03:27 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:03:27 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:03:28 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:03:28 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:03:28 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:03:28 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:03:28 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:03:28 I/WeatherReminder: Plugin loaded
+2023-04-24 16:03:28 I/main: 2 plugin(s) enabled.
+2023-04-24 16:03:28 I/main: mirai-console started successfully.
+2023-04-24 16:03:37 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:03:37 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:03:37 I/Bot.2817857927: Login successful.
+2023-04-24 16:03:38 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:03:38 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:03:38 V/Bot.2817857927: Friend(1064979746) <- 2817857927
+2023-04-24 16:03:38 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:03:39 V/Bot.2817857927: Friend(1064979746) <- [[0, 0, 0, 0], [15, 35, 430000, 1064979746], [15, 43, 430000, 1064979746], [15, 43, 430000, 1064979746], [16, 1, 430000, 1064979746]]
+2023-04-24 16:03:43 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:03:51 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:03:51 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:04:01 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:3 430000
+2023-04-24 16:04:01 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:04:15 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:4 430000
+2023-04-24 16:04:16 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:04:34 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：11 \n风向：西北 \n风力：≤3 \n湿度：88 \n更新时间：2023-04-24 15:34:53
+2023-04-24 16:04:52 W/console: Closing input service...
+2023-04-24 16:05:25 I/main: Starting mirai-console...
+2023-04-24 16:05:25 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:05:25 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:05:25 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:05:25 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:05:25 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:05:25 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:05:25 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:05:25 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:05:25 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:05:25 I/WeatherReminder: Plugin loaded
+2023-04-24 16:05:25 I/main: 2 plugin(s) enabled.
+2023-04-24 16:05:25 I/main: mirai-console started successfully.
+2023-04-24 16:05:30 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:05:30 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:05:30 I/Bot.2817857927: Login successful.
+2023-04-24 16:05:31 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:05:31 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:05:31 V/Bot.2817857927: Friend(1064979746) <- 2817857927
+2023-04-24 16:05:32 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:05:32 V/Bot.2817857927: Friend(1064979746) <- [[0, 0, 0, 0], [15, 35, 430000, 1064979746], [15, 43, 430000, 1064979746], [15, 43, 430000, 1064979746], [16, 1, 430000, 1064979746], [16, 3, 430000, 1064979746], [16, 4, 430000, 1064979746]]
+2023-04-24 16:05:32 V/Bot.2817857927: Friend(1064979746) <- dassadasdasd
+2023-04-24 16:05:37 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:05:37 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:05:38 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:05:45 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:5 430000
+2023-04-24 16:05:45 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:06:05 V/Bot.2817857927: 不知道(1064979746) -> 天气武汉
+2023-04-24 16:06:21 E/WeatherReminder: Exception in coroutine Plugin com.example.weather-reminder of WeatherReminder
+java.lang.NoSuchMethodError: 'java.lang.String com.example.WeatherKt.weather(java.lang.Object)'
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invokeSuspend(Weather-Reminder.kt:35)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invokeSuspend(EventChannel.kt:480)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invokeSuspend(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at net.mamoe.mirai.internal.event.SafeListener.onEvent(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.EventListeners.process(EventListeners.kt:120)
+	at net.mamoe.mirai.internal.event.EventListeners.callListeners$mirai_core(EventListeners.kt:68)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.callListeners(EventChannelImpl.kt:85)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.broadcastEventImpl(EventChannelImpl.kt:75)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast$suspendImpl(EventDispatcher.kt:99)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invokeSuspend(EventDispatcher.kt:113)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcastAsync-kKe4JaQ(EventDispatcher.kt:110)
+	at net.mamoe.mirai.internal.network.components.EventDispatcher.broadcastAsync-kKe4JaQ$default(EventDispatcher.kt:35)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:87)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:80)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.handlePacket(PacketHandler.kt:73)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:108)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:106)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.processBody(CommonNetworkHandler.kt:160)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.access$processBody(CommonNetworkHandler.kt:102)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-24 16:06:21 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:06:23 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:07:10 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:08:01 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:08:48 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:09:34 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:10:28 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:10:51 W/console: Closing input service...
+2023-04-24 16:11:26 I/main: Starting mirai-console...
+2023-04-24 16:11:26 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:11:26 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:11:26 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:11:26 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:11:26 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:11:26 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:11:26 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:11:26 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:11:26 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:11:26 I/WeatherReminder: Plugin loaded
+2023-04-24 16:11:26 I/main: 2 plugin(s) enabled.
+2023-04-24 16:11:26 I/main: mirai-console started successfully.
+2023-04-24 16:11:29 W/console: 未知指令: /fun weather(city:Any): String {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    val key: String = tempKey.toString(), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    var cityName = city.toString(), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    cityName= URLEncoder.encode(cityName, "UTF-8"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    val urls = "https://restapi.amap.com/v3/weather/weatherInfo?city=$cityName&key=$key&extensions=base", 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    val url = URL(urls), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    val conn: HttpURLConnection = url.openConnection() as HttpURLConnection, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    conn.requestMethod = "GET", 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    conn.connectTimeout = 5000, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    conn.readTimeout = 5000, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    try {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val inStream: BufferedInputStream = BufferedInputStream(conn.inputStream), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val json: JSONObject = JSONObject(inStream.bufferedReader().use { it.readText() }), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val city = json.getJSONArray("lives").getJSONObject(0).getString("city"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val weather = json.getJSONArray("lives").getJSONObject(0).getString("weather"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val temperature = json.getJSONArray("lives").getJSONObject(0).getString("temperature"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val winddirection = json.getJSONArray("lives").getJSONObject(0).getString("winddirection"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val windpower = json.getJSONArray("lives").getJSONObject(0).getString("windpower"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val humidity = json.getJSONArray("lives").getJSONObject(0).getString("humidity"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        val reporttime = json.getJSONArray("lives").getJSONObject(0).getString("reporttime"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        return buildString {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append("鍩庡競锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(city), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n澶╂皵锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(weather), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n娓╁害锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(temperature), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n椋庡悜锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(winddirection), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n椋庡姏锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(windpower), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n婀垮害锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(humidity), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(" n鏇存柊鏃堕棿锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            append(reporttime), 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        }, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    } catch (e: Exception) {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        return "璇锋鏌ュ煄甯傚悕鏄惁姝ｇ‘", 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /}, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /suspend fun weatherclock() {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    try {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /    while (true) {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /        for (i in ct.indices) {, 输入 ? 获取帮助
+2023-04-24 16:11:29 W/console: 未知指令: /            val time = LocalDateTime.now(), 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /            if (time.hour == ct[i][0].toInt() && time.minute >= ct[i][1].toInt() - 5  && time.minute <= ct[i][1].toInt() + 5) {, 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /                Bot.getInstance(botidsuspend fun weatherclock() {).getFriend(ct[i][3])?.sendMessage(weather(ct[i][2])), 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /                delay(45000), 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /            }, 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /            delay(1000), 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /        }, 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /    } catch (e: Exception) {, 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /        Bot.getInstance(botidsuspend fun weatherclock() {).getFriend(1064979746)?.sendMessage("澶╂皵鎻愰啋鍑虹幇寮傚父"), 输入 ? 获取帮助
+2023-04-24 16:11:30 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:31 W/console: 未知指令: /}, 输入 ? 获取帮助
+2023-04-24 16:11:33 W/console: Closing input service...
+2023-04-24 16:11:47 I/main: Starting mirai-console...
+2023-04-24 16:11:47 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:11:47 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:11:47 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:11:47 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:11:47 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:11:47 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:11:47 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:11:47 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:11:47 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:11:47 I/WeatherReminder: Plugin loaded
+2023-04-24 16:11:47 I/main: 2 plugin(s) enabled.
+2023-04-24 16:11:47 I/main: mirai-console started successfully.
+2023-04-24 16:11:49 W/console: 未知指令: /fun weather(city:Any): String {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    val key: String = tempKey.toString(), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    var cityName = city.toString(), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    cityName= URLEncoder.encode(cityName, "UTF-8"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    val urls = "https://restapi.amap.com/v3/weather/weatherInfo?city=$cityName&key=$key&extensions=base", 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    val url = URL(urls), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    val conn: HttpURLConnection = url.openConnection() as HttpURLConnection, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    conn.requestMethod = "GET", 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    conn.connectTimeout = 5000, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    conn.readTimeout = 5000, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    try {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val inStream: BufferedInputStream = BufferedInputStream(conn.inputStream), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val json: JSONObject = JSONObject(inStream.bufferedReader().use { it.readText() }), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val city = json.getJSONArray("lives").getJSONObject(0).getString("city"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val weather = json.getJSONArray("lives").getJSONObject(0).getString("weather"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val temperature = json.getJSONArray("lives").getJSONObject(0).getString("temperature"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val winddirection = json.getJSONArray("lives").getJSONObject(0).getString("winddirection"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val windpower = json.getJSONArray("lives").getJSONObject(0).getString("windpower"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val humidity = json.getJSONArray("lives").getJSONObject(0).getString("humidity"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        val reporttime = json.getJSONArray("lives").getJSONObject(0).getString("reporttime"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        return buildString {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append("鍩庡競锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(city), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n澶╂皵锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(weather), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n娓╁害锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(temperature), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n椋庡悜锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(winddirection), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n椋庡姏锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(windpower), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n婀垮害锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(humidity), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(" n鏇存柊鏃堕棿锛?"), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            append(reporttime), 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        }, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    } catch (e: Exception) {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        return "璇锋鏌ュ煄甯傚悕鏄惁姝ｇ‘", 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /}, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /suspend fun weatherclock() {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    try {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /    while (true) {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /        for (i in ct.indices) {, 输入 ? 获取帮助
+2023-04-24 16:11:49 W/console: 未知指令: /            val time = LocalDateTime.now(), 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /            if (time.hour == ct[i][0].toInt() && time.minute >= ct[i][1].toInt() - 5  && time.minute <= ct[i][1].toInt() + 5) {, 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /                Bot.getInstance(botidsuspend fun weatherclock() {).getFriend(ct[i][3])?.sendMessage(weather(ct[i][2])), 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /                delay(45000), 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /            }, 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /            delay(1000), 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /        }, 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /    } catch (e: Exception) {, 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /        Bot.getInstance(botidsuspend fun weatherclock() {).getFriend(1064979746)?.sendMessage("澶╂皵鎻愰啋鍑虹幇寮傚父"), 输入 ? 获取帮助
+2023-04-24 16:11:50 W/console: 未知指令: /    }, 输入 ? 获取帮助
+2023-04-24 16:11:51 W/console: 未知指令: /}, 输入 ? 获取帮助
+2023-04-24 16:11:55 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:11:55 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:11:55 I/Bot.2817857927: Login successful.
+2023-04-24 16:11:56 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:11:56 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:12:01 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:12:01 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:12:16 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:12:16 V/Bot.2817857927: Friend(1064979746) <- 你的key94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 16:12:19 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:12:20 V/Bot.2817857927: Friend(1064979746) <- 城市：武汉市 \n天气：阴 \n温度：12 \n风向：北 \n风力：≤3 \n湿度：79 \n更新时间：2023-04-24 16:02:19
+2023-04-24 16:13:23 W/console: Closing input service...
+2023-04-24 16:14:14 I/main: Starting mirai-console...
+2023-04-24 16:14:14 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:14:14 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:14:14 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:14:14 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:14:14 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:14:14 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:14:14 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:14:14 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:14:14 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:14:14 I/WeatherReminder: Plugin loaded
+2023-04-24 16:14:14 I/main: 2 plugin(s) enabled.
+2023-04-24 16:14:14 I/main: mirai-console started successfully.
+2023-04-24 16:14:17 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:14:17 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:14:17 I/Bot.2817857927: Login successful.
+2023-04-24 16:14:18 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:14:18 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:14:19 W/console: Closing input service...
+2023-04-24 16:14:22 I/main: Starting mirai-console...
+2023-04-24 16:14:22 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:14:22 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:14:22 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:14:22 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:14:22 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:14:22 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:14:22 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:14:23 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:14:23 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:14:23 I/WeatherReminder: Plugin loaded
+2023-04-24 16:14:23 I/main: 2 plugin(s) enabled.
+2023-04-24 16:14:23 I/main: mirai-console started successfully.
+2023-04-24 16:14:26 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:14:26 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:14:27 I/Bot.2817857927: Login successful.
+2023-04-24 16:14:27 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:14:27 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:14:33 W/console: Closing input service...
+2023-04-24 16:14:43 I/main: Starting mirai-console...
+2023-04-24 16:14:43 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:14:43 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:14:43 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:14:43 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:14:43 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:14:43 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:14:43 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:14:44 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:14:44 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:14:44 I/WeatherReminder: Plugin loaded
+2023-04-24 16:14:44 I/main: 2 plugin(s) enabled.
+2023-04-24 16:14:44 I/main: mirai-console started successfully.
+2023-04-24 16:14:54 W/console: Closing input service...
+2023-04-24 16:15:07 I/main: Starting mirai-console...
+2023-04-24 16:15:07 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:15:07 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:15:07 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:15:07 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:15:07 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:15:07 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:15:07 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:15:07 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:15:07 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:15:07 I/WeatherReminder: Plugin loaded
+2023-04-24 16:15:07 I/main: 2 plugin(s) enabled.
+2023-04-24 16:15:07 I/main: mirai-console started successfully.
+2023-04-24 16:15:10 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:15:10 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:15:11 I/Bot.2817857927: Login successful.
+2023-04-24 16:15:11 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:15:11 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:15:20 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:15:20 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:15:42 W/console: Closing input service...
+2023-04-24 16:15:56 I/main: Starting mirai-console...
+2023-04-24 16:15:56 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:15:56 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:15:56 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:15:56 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:15:56 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:15:56 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:15:56 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:15:57 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:15:57 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:15:57 I/WeatherReminder: Plugin loaded
+2023-04-24 16:15:57 I/main: 2 plugin(s) enabled.
+2023-04-24 16:15:57 I/main: mirai-console started successfully.
+2023-04-24 16:16:01 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:16:01 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:16:01 I/Bot.2817857927: Login successful.
+2023-04-24 16:16:01 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:16:01 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:16:05 E/WeatherReminder: Exception in coroutine Plugin com.example.weather-reminder of WeatherReminder
+org.json.JSONException: JSONObject["lives"] not found.
+	at weather-reminder-dev.mirai2.jar[private]//org.json.JSONObject.get(JSONObject.java:570)
+	at weather-reminder-dev.mirai2.jar[private]//org.json.JSONObject.getJSONArray(JSONObject.java:763)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder.weather(Weather-Reminder.kt:44)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder.access$weather(Weather-Reminder.kt:20)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invokeSuspend(Weather-Reminder.kt:95)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invokeSuspend(EventChannel.kt:480)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invokeSuspend(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at net.mamoe.mirai.internal.event.SafeListener.onEvent(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.EventListeners.process(EventListeners.kt:120)
+	at net.mamoe.mirai.internal.event.EventListeners.callListeners$mirai_core(EventListeners.kt:68)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.callListeners(EventChannelImpl.kt:85)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.broadcastEventImpl(EventChannelImpl.kt:75)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast$suspendImpl(EventDispatcher.kt:99)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invokeSuspend(EventDispatcher.kt:113)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcastAsync-kKe4JaQ(EventDispatcher.kt:110)
+	at net.mamoe.mirai.internal.network.components.EventDispatcher.broadcastAsync-kKe4JaQ$default(EventDispatcher.kt:35)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:87)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:80)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.handlePacket(PacketHandler.kt:73)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:108)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:106)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.processBody(CommonNetworkHandler.kt:160)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.access$processBody(CommonNetworkHandler.kt:102)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-24 16:16:05 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:16:23 W/console: Closing input service...
+2023-04-24 16:17:01 I/main: Starting mirai-console...
+2023-04-24 16:17:01 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:17:01 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:17:01 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:17:01 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:17:02 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:17:02 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:17:02 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:17:02 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:17:02 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:17:02 I/WeatherReminder: Plugin loaded
+2023-04-24 16:17:02 I/main: 2 plugin(s) enabled.
+2023-04-24 16:17:02 I/main: mirai-console started successfully.
+2023-04-24 16:17:05 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:17:05 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:17:05 I/Bot.2817857927: Login successful.
+2023-04-24 16:17:05 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:17:05 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:17:09 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:17:09 V/Bot.2817857927: Friend(1064979746) <- https://restapi.amap.com/v3/weather/weatherInfo?city=%E6%AD%A6%E6%B1%89&key=你的key94a1347ef0e648c3d8905f91b3c2d918设置成功&extensions=base
+2023-04-24 16:20:26 W/console: Closing input service...
+2023-04-24 16:20:28 I/main: Starting mirai-console...
+2023-04-24 16:20:28 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:20:28 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:20:28 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:20:28 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:20:29 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:20:29 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:20:29 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:20:29 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:20:29 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:20:29 I/WeatherReminder: Plugin loaded
+2023-04-24 16:20:29 I/main: 2 plugin(s) enabled.
+2023-04-24 16:20:29 I/main: mirai-console started successfully.
+2023-04-24 16:20:35 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:20:36 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:20:36 I/Bot.2817857927: Login successful.
+2023-04-24 16:20:36 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:20:36 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:20:40 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:20:41 V/Bot.2817857927: Friend(1064979746) <- 城市：武汉市 \n天气：阴 \n温度：12 \n风向：北 \n风力：≤3 \n湿度：79 \n更新时间：2023-04-24 16:02:19
+2023-04-24 16:21:06 E/WeatherReminder: Exception in coroutine Plugin com.example.weather-reminder of WeatherReminder
+java.lang.IndexOutOfBoundsException: Empty list doesn't contain element at index 0.
+	at kotlin.collections.EmptyList.get(Collections.kt:36)
+	at kotlin.collections.EmptyList.get(Collections.kt:24)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invokeSuspend(Weather-Reminder.kt:45)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$2.invoke(Weather-Reminder.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invokeSuspend(EventChannel.kt:480)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invokeSuspend(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at net.mamoe.mirai.internal.event.SafeListener.onEvent(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.EventListeners.process(EventListeners.kt:120)
+	at net.mamoe.mirai.internal.event.EventListeners.callListeners$mirai_core(EventListeners.kt:68)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.callListeners(EventChannelImpl.kt:85)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.broadcastEventImpl(EventChannelImpl.kt:75)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast$suspendImpl(EventDispatcher.kt:99)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invokeSuspend(EventDispatcher.kt:113)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcastAsync-kKe4JaQ(EventDispatcher.kt:110)
+	at net.mamoe.mirai.internal.network.components.EventDispatcher.broadcastAsync-kKe4JaQ$default(EventDispatcher.kt:35)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:87)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.impl(PacketHandler.kt:80)
+	at net.mamoe.mirai.internal.network.components.EventBroadcasterPacketHandler.handlePacket(PacketHandler.kt:73)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:108)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:106)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.processBody(CommonNetworkHandler.kt:160)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.access$processBody(CommonNetworkHandler.kt:102)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1.invokeSuspend(CommonNetworkHandler.kt:126)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-04-24 16:21:06 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:20 武汉
+2023-04-24 16:21:14 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:20 430000
+2023-04-24 16:21:14 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:21:25 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：87 \n更新时间：2023-04-24 16:04:54
+2023-04-24 16:21:45 W/console: Closing input service...
+2023-04-24 16:26:30 I/main: Starting mirai-console...
+2023-04-24 16:26:30 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:26:30 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:26:30 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:26:30 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:26:30 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:26:30 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:26:30 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:26:30 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:26:30 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:26:30 I/WeatherReminder: Plugin loaded
+2023-04-24 16:26:30 I/main: 2 plugin(s) enabled.
+2023-04-24 16:26:30 I/main: mirai-console started successfully.
+2023-04-24 16:26:33 W/console: Closing input service...
+2023-04-24 16:38:17 I/main: Starting mirai-console...
+2023-04-24 16:38:17 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:38:17 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:38:17 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:38:17 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:38:17 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:38:17 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:38:17 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:38:18 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:38:18 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:38:18 I/WeatherReminder: Plugin loaded
+2023-04-24 16:38:18 I/main: 2 plugin(s) enabled.
+2023-04-24 16:38:18 I/main: mirai-console started successfully.
+2023-04-24 16:38:25 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:38:26 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:38:26 I/Bot.2817857927: Login successful.
+2023-04-24 16:38:26 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:38:36 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 16:38:36 V/Bot.2817857927: Friend(1064979746) <- 城市：武汉市 \n天气：阴 \n温度：12 \n风向：北 \n风力：≤3 \n湿度：79 \n更新时间：2023-04-24 16:32:21
+2023-04-24 16:38:41 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:20 430000
+2023-04-24 16:38:41 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:38:49 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:38 430000
+2023-04-24 16:38:49 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:39:09 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:39 430000
+2023-04-24 16:39:09 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:40:45 I/main: Starting mirai-console...
+2023-04-24 16:40:45 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:40:45 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:40:45 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:40:45 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:40:46 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:40:46 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:40:46 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:40:46 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:40:46 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:40:46 I/WeatherReminder: Plugin loaded
+2023-04-24 16:40:46 I/main: 2 plugin(s) enabled.
+2023-04-24 16:40:46 I/main: mirai-console started successfully.
+2023-04-24 16:40:51 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:40:51 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:40:51 I/Bot.2817857927: Login successful.
+2023-04-24 16:40:52 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:40:52 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:40:56 V/Bot.2817857927: 不知道(1064979746) -> 帮助
+2023-04-24 16:40:56 V/Bot.2817857927: Friend(1064979746) <- 指令\n查询城市天气：天气 <城市名>\n定天气提醒闹钟：时间 <时:分> <城市编码>\n设置你的key：key <你的key>
+2023-04-24 16:41:08 W/console: Closing input service...
+2023-04-24 16:41:11 I/main: Starting mirai-console...
+2023-04-24 16:41:11 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:41:11 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:41:11 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:41:11 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:41:31 I/main: Starting mirai-console...
+2023-04-24 16:41:31 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:41:31 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:41:31 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:41:31 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:41:32 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:41:32 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:41:32 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:41:32 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:41:32 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:41:32 I/WeatherReminder: Plugin loaded
+2023-04-24 16:41:32 I/main: 2 plugin(s) enabled.
+2023-04-24 16:41:32 I/main: mirai-console started successfully.
+2023-04-24 16:41:34 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:41:34 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:41:34 I/Bot.2817857927: Login successful.
+2023-04-24 16:41:35 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:41:35 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:41:41 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:39 430000
+2023-04-24 16:41:41 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:42:21 W/console: Closing input service...
+2023-04-24 16:42:23 I/main: Starting mirai-console...
+2023-04-24 16:42:23 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:42:23 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:42:23 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:42:23 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:42:24 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:42:24 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:42:24 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:42:24 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:42:24 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:42:24 I/WeatherReminder: Plugin loaded
+2023-04-24 16:42:24 I/main: 2 plugin(s) enabled.
+2023-04-24 16:42:24 I/main: mirai-console started successfully.
+2023-04-24 16:42:26 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:42:26 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:42:27 I/Bot.2817857927: Login successful.
+2023-04-24 16:42:27 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:42:27 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:42:29 W/console: Closing input service...
+2023-04-24 16:43:57 I/main: Starting mirai-console...
+2023-04-24 16:43:58 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:43:58 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:43:58 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:43:58 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:43:58 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:43:58 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:43:58 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:43:58 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:43:58 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:43:58 I/WeatherReminder: Plugin loaded
+2023-04-24 16:43:58 I/main: 2 plugin(s) enabled.
+2023-04-24 16:43:58 I/main: mirai-console started successfully.
+2023-04-24 16:44:01 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:44:01 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:44:01 I/Bot.2817857927: Login successful.
+2023-04-24 16:44:02 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:44:02 E/WeatherReminder: Exception in coroutine Plugin com.example.weather-reminder of WeatherReminder
+java.lang.NullPointerException: null cannot be cast to non-null type kotlin.String
+	at weather-reminder-dev.mirai2.jar//com.example.ReaderKt.keyreader(Reader.kt:10)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$3.invokeSuspend(Weather-Reminder.kt:65)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$3.invoke(Weather-Reminder.kt)
+	at weather-reminder-dev.mirai2.jar//com.example.WeatherReminder$onEnable$3.invoke(Weather-Reminder.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invokeSuspend(EventChannel.kt:480)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.event.EventChannel$subscribeAlways$1.invoke(EventChannel.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invokeSuspend(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at net.mamoe.mirai.internal.event.SafeListener$onEvent$2.invoke(SafeListener.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at net.mamoe.mirai.internal.event.SafeListener.onEvent(SafeListener.kt:58)
+	at net.mamoe.mirai.internal.event.EventListeners.process(EventListeners.kt:120)
+	at net.mamoe.mirai.internal.event.EventListeners.callListeners$mirai_core(EventListeners.kt:68)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.callListeners(EventChannelImpl.kt:85)
+	at net.mamoe.mirai.internal.event.EventChannelImpl.broadcastEventImpl(EventChannelImpl.kt:75)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast$suspendImpl(EventDispatcher.kt:99)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcast(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invokeSuspend(EventDispatcher.kt:113)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl$broadcastAsync$job$1.invoke(EventDispatcher.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at net.mamoe.mirai.internal.network.components.EventDispatcherImpl.broadcastAsync-kKe4JaQ(EventDispatcher.kt:110)
+	at net.mamoe.mirai.internal.network.components.EventDispatcher.broadcastAsync-kKe4JaQ$default(EventDispatcher.kt:35)
+	at net.mamoe.mirai.internal.QQAndroidBot$stateObserverChain$1.stateChanged0(QQAndroidBot.kt:118)
+	at net.mamoe.mirai.internal.network.handler.state.StateChangedObserver.stateChanged(StateChangedObserver.kt:93)
+	at net.mamoe.mirai.internal.network.handler.state.CombinedStateObserver.stateChanged(CombinedStateObserver.kt:31)
+	at net.mamoe.mirai.internal.network.handler.state.SafeStateObserver.stateChanged(SafeStateObserver.kt:55)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:355)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateLoading.resumeConnection0(CommonNetworkHandler.kt:410)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateLoading$resumeConnection0$1.invokeSuspend(CommonNetworkHandler.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2023-04-24 16:44:02 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:45:04 W/console: Closing input service...
+2023-04-24 16:45:06 I/main: Starting mirai-console...
+2023-04-24 16:45:06 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:45:06 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:45:06 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:45:06 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:45:07 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:45:07 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:45:07 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:45:07 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:45:07 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:45:07 I/WeatherReminder: Plugin loaded
+2023-04-24 16:45:07 I/main: 2 plugin(s) enabled.
+2023-04-24 16:45:07 I/main: mirai-console started successfully.
+2023-04-24 16:45:15 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:45:16 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:45:16 I/Bot.2817857927: Login successful.
+2023-04-24 16:45:16 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:45:16 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:45:52 W/console: Closing input service...
+2023-04-24 16:46:06 I/main: Starting mirai-console...
+2023-04-24 16:46:06 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:46:06 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:46:06 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:46:06 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:46:06 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:46:06 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:46:06 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:46:06 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:46:06 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:46:06 I/WeatherReminder: Plugin loaded
+2023-04-24 16:46:06 I/main: 2 plugin(s) enabled.
+2023-04-24 16:46:06 I/main: mirai-console started successfully.
+2023-04-24 16:46:10 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:46:10 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:46:11 I/Bot.2817857927: Login successful.
+2023-04-24 16:46:11 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:46:11 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:46:11 V/Bot.2817857927: Friend(1064979746) <- 请设置key
+2023-04-24 16:46:21 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:46:22 V/Bot.2817857927: Friend(1064979746) <- 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:46:27 W/console: Closing input service...
+2023-04-24 16:46:40 I/main: Starting mirai-console...
+2023-04-24 16:46:40 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:46:40 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:46:40 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:46:40 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:46:41 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:46:41 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:46:41 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:46:41 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:46:41 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:46:41 I/WeatherReminder: Plugin loaded
+2023-04-24 16:46:41 I/main: 2 plugin(s) enabled.
+2023-04-24 16:46:41 I/main: mirai-console started successfully.
+2023-04-24 16:46:55 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:46:55 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:46:55 I/Bot.2817857927: Login successful.
+2023-04-24 16:46:56 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:46:56 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:46:56 V/Bot.2817857927: Friend(1064979746) <- 请设置key
+2023-04-24 16:47:04 W/console: Closing input service...
+2023-04-24 16:49:50 I/main: Starting mirai-console...
+2023-04-24 16:49:50 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:49:50 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:49:50 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:49:50 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:49:50 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:49:50 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:49:50 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:49:51 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:49:51 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:49:51 I/WeatherReminder: Plugin loaded
+2023-04-24 16:49:51 I/main: 2 plugin(s) enabled.
+2023-04-24 16:49:51 I/main: mirai-console started successfully.
+2023-04-24 16:50:02 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:50:02 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:50:02 I/Bot.2817857927: Login successful.
+2023-04-24 16:50:02 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:50:02 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:50:03 V/Bot.2817857927: Friend(1064979746) <- 请设置key
+2023-04-24 16:50:15 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:50:16 V/Bot.2817857927: Friend(1064979746) <- 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:50:23 W/console: Closing input service...
+2023-04-24 16:50:24 I/main: Starting mirai-console...
+2023-04-24 16:50:24 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:50:24 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:50:24 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:50:24 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:50:25 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:50:25 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:50:25 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:50:25 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:50:25 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:50:25 I/WeatherReminder: Plugin loaded
+2023-04-24 16:50:25 I/main: 2 plugin(s) enabled.
+2023-04-24 16:50:25 I/main: mirai-console started successfully.
+2023-04-24 16:50:31 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:50:31 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:50:31 I/Bot.2817857927: Login successful.
+2023-04-24 16:50:32 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:50:32 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:50:36 W/console: Closing input service...
+2023-04-24 16:53:35 I/main: Starting mirai-console...
+2023-04-24 16:53:35 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:53:35 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:53:35 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:53:35 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:53:35 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:53:35 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:53:35 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:53:35 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:53:35 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:53:35 I/WeatherReminder: Plugin loaded
+2023-04-24 16:53:36 I/main: 2 plugin(s) enabled.
+2023-04-24 16:53:36 I/main: mirai-console started successfully.
+2023-04-24 16:53:38 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:53:39 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:53:39 I/Bot.2817857927: Login successful.
+2023-04-24 16:53:39 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:53:39 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:53:51 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:53 430000
+2023-04-24 16:53:51 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:53:53 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 16:53:59 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:53:59 V/Bot.2817857927: Friend(1064979746) <- 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:54:07 W/console: Closing input service...
+2023-04-24 16:54:28 I/main: Starting mirai-console...
+2023-04-24 16:54:28 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:54:28 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:54:28 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:54:28 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:54:29 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:54:29 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:54:29 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:54:29 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:54:29 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:54:29 I/WeatherReminder: Plugin loaded
+2023-04-24 16:54:29 I/main: 2 plugin(s) enabled.
+2023-04-24 16:54:29 I/main: mirai-console started successfully.
+2023-04-24 16:54:30 W/console: Closing input service...
+2023-04-24 16:54:34 I/main: Starting mirai-console...
+2023-04-24 16:54:34 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 16:54:34 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 16:54:34 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 16:54:34 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 16:54:35 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 16:54:35 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 16:54:35 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 16:54:35 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 16:54:35 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 16:54:35 I/WeatherReminder: Plugin loaded
+2023-04-24 16:54:35 I/main: 2 plugin(s) enabled.
+2023-04-24 16:54:35 I/main: mirai-console started successfully.
+2023-04-24 16:54:38 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 16:54:38 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 16:54:38 I/Bot.2817857927: Login successful.
+2023-04-24 16:54:39 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 16:54:39 I/Bot.2817857927: Bot login successful.
+2023-04-24 16:54:43 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:53 430000
+2023-04-24 16:54:43 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:54:49 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:54:49 V/Bot.2817857927: Friend(1064979746) <- 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 16:54:57 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:54 430000
+2023-04-24 16:54:57 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:55:19 V/Bot.2817857927: 不知道(1064979746) -> 时间 16:55 430000
+2023-04-24 16:55:20 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 16:55:26 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：89 \n更新时间：2023-04-24 16:34:56
+2023-04-24 17:00:13 W/console: Closing input service...
+2023-04-24 17:00:15 I/main: Starting mirai-console...
+2023-04-24 17:00:15 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 17:00:15 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 17:00:15 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 17:00:15 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 17:00:16 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 17:00:16 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 17:00:16 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 17:00:16 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 17:00:16 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 17:00:16 I/WeatherReminder: Plugin loaded
+2023-04-24 17:00:16 I/main: 2 plugin(s) enabled.
+2023-04-24 17:00:16 I/main: mirai-console started successfully.
+2023-04-24 17:00:22 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 17:00:22 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 17:00:22 I/Bot.2817857927: Login successful.
+2023-04-24 17:00:22 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 17:00:22 I/Bot.2817857927: Bot login successful.
+2023-04-24 17:00:28 V/Bot.2817857927: 不知道(1064979746) -> 天气北京
+2023-04-24 17:00:32 V/Bot.2817857927: 不知道(1064979746) -> 天气 北京
+2023-04-24 17:00:33 V/Bot.2817857927: Friend(1064979746) <- 城市：北京市 \n天气：多云 \n温度：13 \n风向：南 \n风力：≤3 \n湿度：50 \n更新时间：2023-04-24 16:39:07
+2023-04-24 17:00:38 V/Bot.2817857927: 不知道(1064979746) -> 武汉天气
+2023-04-24 17:00:46 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 17:00:46 V/Bot.2817857927: Friend(1064979746) <- 城市：武汉市 \n天气：阴 \n温度：12 \n风向：北 \n风力：≤3 \n湿度：79 \n更新时间：2023-04-24 16:32:21
+2023-04-24 17:01:06 V/Bot.2817857927: 不知道(1064979746) -> 时间 17:00 430000
+2023-04-24 17:01:06 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 17:01:29 V/Bot.2817857927: 不知道(1064979746) -> 时间 17:01 430000
+2023-04-24 17:01:31 V/Bot.2817857927: Friend(1064979746) <- 2
+2023-04-24 17:01:37 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：西北 \n风力：≤3 \n湿度：89 \n更新时间：2023-04-24 16:34:56
+2023-04-24 17:01:46 W/console: Closing input service...
+2023-04-24 17:01:53 I/main: Starting mirai-console...
+2023-04-24 17:01:53 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 17:01:53 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 17:01:53 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 17:01:53 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 17:01:54 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 17:01:54 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 17:01:54 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 17:01:54 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 17:01:54 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 17:01:54 I/WeatherReminder: Plugin loaded
+2023-04-24 17:01:54 I/main: 2 plugin(s) enabled.
+2023-04-24 17:01:54 I/main: mirai-console started successfully.
+2023-04-24 17:01:57 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 17:01:57 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 17:01:57 I/Bot.2817857927: Login successful.
+2023-04-24 17:01:58 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 17:01:58 I/Bot.2817857927: Bot login successful.
+2023-04-24 17:02:07 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 17:02:07 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 17:02:15 W/console: Closing input service...
+2023-04-24 17:02:57 I/main: Starting mirai-console...
+2023-04-24 17:02:57 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 17:02:57 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 17:02:57 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 17:02:57 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 17:02:58 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 17:02:58 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 17:02:58 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 17:02:58 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 17:02:58 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 17:02:58 I/WeatherReminder: Plugin loaded
+2023-04-24 17:02:58 I/main: 2 plugin(s) enabled.
+2023-04-24 17:02:58 I/main: mirai-console started successfully.
+2023-04-24 17:03:01 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 17:03:01 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 17:03:01 I/Bot.2817857927: Login successful.
+2023-04-24 17:03:02 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 17:03:02 I/Bot.2817857927: Bot login successful.
+2023-04-24 17:03:05 V/Bot.2817857927: 不知道(1064979746) -> 帮助
+2023-04-24 17:03:06 V/Bot.2817857927: Friend(1064979746) <- 指令\n查询城市天气：天气 <城市名>\n天气提醒闹钟：时间 <时:分> <城市编码>\n设置你的key：key <你的key>
+2023-04-24 17:03:06 V/Bot.2817857927: Friend(1064979746) <- 你还没有设置key.请使用key <你的key>来设置key
+2023-04-24 17:03:15 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 17:03:15 V/Bot.2817857927: Friend(1064979746) <- 你还没有设置key.请使用key <你的key>来设置key
+2023-04-24 17:03:16 V/Bot.2817857927: Friend(1064979746) <- 请检查城市名是否正确
+2023-04-24 17:05:56 W/console: Closing input service...
+2023-04-24 17:05:58 I/main: Starting mirai-console...
+2023-04-24 17:05:58 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 17:05:58 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 17:05:58 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 17:05:58 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 17:05:59 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 17:05:59 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 17:05:59 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 17:05:59 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 17:05:59 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 17:05:59 I/WeatherReminder: Plugin loaded
+2023-04-24 17:05:59 I/main: 2 plugin(s) enabled.
+2023-04-24 17:05:59 I/main: mirai-console started successfully.
+2023-04-24 17:06:02 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 17:06:03 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 17:06:03 I/Bot.2817857927: Login successful.
+2023-04-24 17:06:04 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 17:06:04 I/Bot.2817857927: Bot login successful.
+2023-04-24 17:06:10 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 17:06:10 V/Bot.2817857927: Friend(1064979746) <- 你还没有设置key.请使用key <你的key>来设置key
+2023-04-24 17:06:26 V/Bot.2817857927: 不知道(1064979746) -> key 94a1347ef0e648c3d8905f91b3c2d918
+2023-04-24 17:06:26 V/Bot.2817857927: Friend(1064979746) <- 你的key:94a1347ef0e648c3d8905f91b3c2d918设置成功
+2023-04-24 17:06:31 V/Bot.2817857927: 不知道(1064979746) -> 天气 武汉
+2023-04-24 17:06:31 V/Bot.2817857927: Friend(1064979746) <- 城市：武汉市 \n天气：阴 \n温度：12 \n风向：北 \n风力：≤3 \n湿度：80 \n更新时间：2023-04-24 17:02:19
+2023-04-24 17:06:45 V/Bot.2817857927: 不知道(1064979746) -> 时间 17:06 430000
+2023-04-24 17:06:45 V/Bot.2817857927: Friend(1064979746) <- 设置成功
+2023-04-24 17:06:48 V/Bot.2817857927: Friend(1064979746) <- 城市：湖南省 \n天气：阴 \n温度：12 \n风向：东北 \n风力：≤3 \n湿度：90 \n更新时间：2023-04-24 17:04:53
+2023-04-24 17:06:59 W/console: Closing input service...
+2023-04-24 17:36:30 I/main: Starting mirai-console...
+2023-04-24 17:36:30 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-04-24 17:36:30 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-04-24 17:36:30 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-04-24 17:36:30 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-04-24 17:36:31 W/fix-protocol-version: Mirai版本低于预期，将升级协议版本
+2023-04-24 17:36:31 I/plugin: Successfully loaded plugin fix-protocol-version v1.3.0
+2023-04-24 17:36:31 I/plugin: Successfully loaded plugin WeatherReminder v0.1.0
+2023-04-24 17:36:31 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-04-24 17:36:31 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_PAD   8.9.33.10335   2023-01-13T16:51:38+08:00
+ANDROID_WATCH   2.0.5   2019-06-03T20:25:31+08:00
+IPAD   8.9.33.614   2021-12-31T11:36:26+08:00
+MACOS   5.8.9   2020-07-27T15:50:08+08:00
+
+2023-04-24 17:36:31 I/WeatherReminder: Plugin loaded
+2023-04-24 17:36:31 I/main: 2 plugin(s) enabled.
+2023-04-24 17:36:31 I/main: mirai-console started successfully.
+2023-04-24 17:36:41 I/Bot.2817857927: Loaded account secrets from local cache.
+2023-04-24 17:36:41 I/Bot.2817857927: Saved account secrets to local cache for fast login.
+2023-04-24 17:36:41 I/Bot.2817857927: Login successful.
+2023-04-24 17:36:42 V/Bot.2817857927: Event: BotOnlineEvent(bot=Bot(2817857927))
+2023-04-24 17:36:42 I/Bot.2817857927: Bot login successful.
+2023-04-24 17:37:25 V/Bot.2817857927: 不知道(1064979746) -> 时间 17:06 430000
+2023-04-24 17:37:26 V/Bot.2817857927: Friend(1064979746) <- 设置成功
+2023-04-24 17:37:34 W/console: Closing input service...
