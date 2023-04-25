@@ -11,7 +11,7 @@ mirai的天气提醒插件，在win10下测试的
   
 配置的是高德天气的api，可以先去https://console.amap.com/dev/key/app申请key
   
-![image](https://user-images.githubusercontent.com/104863909/233968373-93df9cdc-90c8-4ecb-8b8a-f1afe3a49f52.png)
+![image](https://user-images.githubusercontent.com/104863909/234200584-f4cd92df-b4f3-43f4-9e70-ee14d95f257b.png)
 ![image](https://user-images.githubusercontent.com/104863909/233968492-29644668-cc2d-4064-9e2f-04615b2dad21.png)
 ![image](https://user-images.githubusercontent.com/104863909/233968593-9a7946fd-6c3b-44fc-a6b8-fd2f98fd04c7.png)
 ![image](https://user-images.githubusercontent.com/104863909/233968733-945a3141-2510-40bf-81fd-60b530a5009c.png)
