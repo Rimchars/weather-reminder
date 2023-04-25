@@ -3,7 +3,7 @@ mirai的天气提醒插件，在win10下测试的
 把release下载放到plugins即可，
 给bot发帮助获取指令
 
-![image](https://user-images.githubusercontent.com/104863909/233966602-916c0e8e-5882-4104-a791-4927cfa54617.png)
+![H6X9EH~X1M_3KRY3HX_ K3E](https://user-images.githubusercontent.com/104863909/234200250-fdb076d9-d56c-4cc3-83d9-db0f152456a8.png)
 
 使用前要先使用key <key>设置key
   
