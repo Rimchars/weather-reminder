@@ -5,6 +5,8 @@ import com.example.WeatherReminder.ct
 import com.example.WeatherReminder.tempKey
 import kotlinx.coroutines.delay
 import net.mamoe.mirai.Bot
+import net.mamoe.mirai.console.util.ConsoleExperimentalApi
+import net.mamoe.mirai.console.util.ContactUtils.getContact
 import org.json.JSONObject
 import java.io.BufferedInputStream
 import java.net.HttpURLConnection
@@ -12,7 +14,7 @@ import java.net.URL
 import java.net.URLEncoder
 import java.time.LocalDateTime
 
-fun weather(city:Any): String {
+fun weather(city:Any): String{
     val key: String = tempKey.toString()
     var cityName = city.toString()
     cityName= URLEncoder.encode(cityName, "UTF-8")
@@ -49,22 +51,20 @@ fun weather(city:Any): String {
             append(reporttime)
         }
     } catch (e: Exception) {
-        return "请检查城市名是否正确"
+        return "查询失败"
     }
 }
+@OptIn(ConsoleExperimentalApi::class)
 suspend fun weatherclock() {
-    try {
-        while (true) {
+    val time = LocalDateTime.now()
             for (i in ct.indices) {
-                val time = LocalDateTime.now()
+
                 if (time.hour == ct[i][0].toInt() && time.minute >= ct[i][1].toInt() && time.minute <= ct[i][1].toInt()) {
-                    Bot.getInstance(botid!!).getFriend(ct[i][3])?.sendMessage(weather(ct[i][2]))
-                    delay(45000)
+                    try {
+                        Bot.getInstance(botid!!).getContact(ct[i][3]).sendMessage(weather(ct[i][2]))
+                    } catch (e: Exception) {
+                        Bot.getInstance(botid!!).getContact(ct[i][3]).sendMessage("查询失败")
+                    }
                 }
-                delay(1000)
             }
-        }
-    } catch (e: Exception) {
-        Bot.getInstance(botid!!).getFriend(1064979746)?.sendMessage("天气提醒出现异常")
-    }
 }
